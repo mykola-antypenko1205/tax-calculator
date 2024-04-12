@@ -1,0 +1,25 @@
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .form-error {
+      margin-top: -20px;
+    }
+  }
+
+  .form-control {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+

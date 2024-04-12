@@ -1,0 +1,7 @@
+<div class="tax-calculator">
+  <app-salary-form (calculate)="calculateData($event)"></app-salary-form>
+  <app-result-info-list
+    *ngIf="isCalculated"
+    [resultList]="calculationResult"
+  ></app-result-info-list>
+</div>

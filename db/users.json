@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "user.user1@email.com",
+      "password": "qwerty123A"
+    },
+    {
+      "id": 2,
+      "email": "user.user2@email.com",
+      "password": "DDQldls?kdpw0fk"
+    },
+    {
+      "id": 3,
+      "email": "user.user3@email.com",
+      "password": "Password1233"
+    }
+  ]
+}

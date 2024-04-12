@@ -1,0 +1,27 @@
+<div class="salary-container">
+  <form class="salary-container__form" #form="ngForm" (ngSubmit)="onClick()">
+    <label class="salary-container__form-label">Gross Annual Salary: </label>
+    <mat-form-field floatLabel="always" class="form-field">
+      <mat-label>Amount</mat-label>
+      <input
+        matInput
+        type="number"
+        name="amount"
+        [(ngModel)]="annualSalary"
+        #salaryInput="ngModel"
+        class="form-field__right-align"
+        placeholder="0"
+        required
+      >
+      <span matTextPrefix>£</span>
+      <mat-error *ngIf="salaryInput.invalid && salaryInput.hasError('required')" class="form-field__error">
+        Salary field is required
+      </mat-error>
+    </mat-form-field>
+    <app-button-primary
+      label="Calculate"
+      class="salary-container__form-submit"
+      [disabled]="!form.valid"
+    ></app-button-primary>
+  </form>
+</div>
